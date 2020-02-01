@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+    padding: 0;
+    /* font-family: 'Raleway', sans-serif; */
+}
+
+.a {
+    /* background-color: rgb(58, 53, 80); */
+    height: 100vh;
+}
+
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+}
+
+.test {
+    height: 100vh;
+    width: 50vw;
+    background: url(./received_192980501892955.jpeg) no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    position: absolute;
+    right: 10%;
+}
+
+.title {
+    position: relative;
+    height: 80vh;
+    color: white;
+    z-index: 3;
+    font-family: 'Zhi Mang Xing', cursive;
+}
+
+@media only screen and (max-width: 768px) {
+    .test {
+        position: absolute;
+        right: 0;
+        height: 90vh;
+        width: 80vw;
+    }
+}
+
+.w {
+    height: 100vh;
+    background-color: azure;
+}
