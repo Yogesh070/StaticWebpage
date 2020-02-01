@@ -1,13 +1,20 @@
 * {
     margin: 0;
     padding: 0;
-    /* font-family: 'Raleway', sans-serif; */
 }
 
 .a {
-    /* background-color: rgb(58, 53, 80); */
     height: 100vh;
 }
+
+.a nav li a {
+    font-size: 15px;
+    color: white;
+    font-weight: 20px;
+}
+
+
+/* css for video */
 
 #myVideo {
     position: fixed;
@@ -18,36 +25,126 @@
     z-index: -1;
 }
 
-.test {
+
+/* css for top container  */
+
+.main-image {
     height: 100vh;
-    width: 50vw;
-    background: url(./received_192980501892955.jpeg) no-repeat center center scroll;
+    width: 40vw;
+    background: url(./received_192980501892955.jpeg) no-repeat scroll;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
     position: absolute;
-    right: 10%;
+    right: 20%;
 }
 
 .title {
     position: relative;
-    height: 80vh;
+    height: 100vh;
     color: white;
     z-index: 3;
+}
+
+.info {
+    position: absolute;
+    top: 50%;
     font-family: 'Zhi Mang Xing', cursive;
 }
 
 @media only screen and (max-width: 768px) {
-    .test {
+    .main-image {
         position: absolute;
         right: 0;
-        height: 90vh;
+        height: 100vh;
         width: 80vw;
     }
 }
 
-.w {
+
+/* css for second main container */
+
+.second-main-container {
     height: 100vh;
-    background-color: azure;
+    background-color: white;
+    font-family: 'Raleway', sans-serif;
+}
+
+.aboutme {
+    padding: 30px;
+    position: relative;
+    top: 30%;
+}
+
+.quote {
+    padding: 25px;
+    font-size: 40px;
+}
+
+.contact {
+    padding: 250px;
+}
+
+@media only screen and (max-width: 768px) {
+    .contact {
+        padding: 80px;
+    }
+    .aboutme {
+        padding: 10px;
+        position: relative;
+        top: 20%;
+    }
+    .quote {
+        padding: 15px;
+        font-size: 30px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .aboutme {
+        padding: 10px;
+        position: relative;
+        top: 10%;
+    }
+}
+
+
+/* css for third container */
+
+.third-container {
+    height: 100vh;
+    background: url(./sadasdasd.jpg) no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+
+/* css for fourth-container */
+
+.fourth-container {
+    height: 100vh;
+    background-color: white;
+}
+
+
+/* css for footer */
+
+.footer {
+    font-family: 'Raleway', sans-serif;
+    border-top: 1px solid white;
+}
+
+@media only screen and (max-width: 768px) {
+    .foot-one {
+        display: none;
+    }
+}
+
+.footer nav li a {
+    font-size: 15px;
+    padding: 15px;
+    color: white;
 }
