@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
 }
 
 .a {
@@ -62,6 +63,12 @@
     }
 }
 
+.head-name {
+    animation-duration: 2s;
+    animation-delay: 2s;
+    animation-iteration-count: initial;
+}
+
 
 /* css for second main container */
 
@@ -113,12 +120,79 @@
 /* css for third container */
 
 .third-container {
+    font-family: 'Raleway', sans-serif;
     height: 100vh;
     background: url(./sadasdasd.jpg) no-repeat center center scroll;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+}
+
+.third-container h1 {
+    position: relative;
+    top: 30%;
+    text-align: center;
+    color: white;
+    font-family: 'Zhi Mang Xing', cursive;
+    font-size: 4em;
+}
+
+.cards {
+    height: 550px;
+    background-color: #D9BC70;
+    padding: 50px;
+}
+
+.card-template {
+    margin: 80px;
+    position: relative;
+    top: 35%;
+    padding: 50px;
+}
+
+@media only screen and (max-width: 768px) {
+    .cards {
+        height: 400px;
+        background-color: #D9BC70;
+        padding: 25px;
+    }
+    .card-template {
+        margin: 0;
+        position: relative;
+        top: 45%;
+        padding: 15px;
+    }
+}
+
+.v {
+    background: url(./received_192980501892955.jpeg) no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+@media only screen and (max-width: 600px) {
+    .cards {
+        height: 300px;
+        background-color: #D9BC70;
+        padding: 25px;
+    }
+    .card-template {
+        margin: 0;
+        position: relative;
+        top: 20%;
+        padding: 15px;
+    }
+    .third-container h1 {
+        position: relative;
+        top: 10%;
+        text-align: center;
+        color: #D9BC70;
+        font-family: 'Zhi Mang Xing', cursive;
+        font-size: 3em;
+    }
 }
 
 
