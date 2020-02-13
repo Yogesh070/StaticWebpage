@@ -9,7 +9,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Zhi+Mang+Xing&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Amatic+SC&display=swap" rel="stylesheet">
@@ -22,7 +22,7 @@
 <body>
     <div class="container-fluid a">
         <video autoplay muted loop id="myVideo">
-            <source src="video (1).mp4" type="video/mp4">
+            <source src="Assets/video (1).mp4" type="video/mp4">
           </video>
         <nav class="navbar navbar-expand-sm navbar-dark">
             <a class="navbar-brand text-warning" href="#" style="font-family: 'Zhi Mang Xing', cursive; font-size: 40px;">Yogesh</a>
@@ -35,13 +35,16 @@
                         <a class="nav-link active p-5" href="#">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link p-5 text-white" href="#">About</a>
+                        <a class="nav-link p-5 text-white" href="#EduTimeline">Education</a>
+                    </li>
+                    <!-- <li class="nav-item">
+                        <a class="nav-link p-5 text-white" href="#">Experience</a>
+                    </li> -->
+                    <li class="nav-item">
+                        <a class="nav-link p-5 text-white" href="#">Skills</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link p-5 text-white" href="#">Timeline</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link p-5 text-white" href="#">Contact</a>
+                        <a class="nav-link p-5 text-white" href="#contact">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -63,13 +66,13 @@
             <button class="btn btn-outline-warning p-3">Want more info?</button>
         </div>
     </div>
-    <div class="container-fluid third-container">
+    <div class="container-fluid third-container" id="Accomplishment">
         <h1>My Accomplishment</h1>
         <div class="row card-template">
             <div class="col-sm-4">
                 <figure class="imghvr-zoom-out-up">
                     <div class="container cards">
-                        <h3 class="ih-fade-down ih-delay-lg ">Oscar Wilde</h3>
+                        <h3 class="ih-fade-down ih-delay-lg ">Coming Soon</h3>
                         <p class="ih-zoom-in ih-delay-md">
                             <i>"I have the simplest tastes, I am always satisfied with the best."</i>
                         </p>
@@ -93,7 +96,7 @@
             <div class="col-sm-4 x">
                 <figure class="imghvr-zoom-out-up">
                     <div class="container cards">
-                        <h3 class="ih-fade-down ih-delay-lg ">Oscar Wilde</h3>
+                        <h3 class="ih-fade-down ih-delay-lg ">Project Underway</h3>
                         <p class="ih-zoom-in ih-delay-md">
                             <i>"I have the simplest tastes, I am always satisfied with the best."</i>
                         </p>
@@ -105,51 +108,114 @@
         </div>
     </div>
     <div class="container-fluid fourth-container">
-
     </div>
-    <div class="container text-center text-white">
-        <div class="contact">
-            <h2 class="py-4">Would you like to get in touch with Yogesh?</h2>
-            <p>Simply call or drop a message</p>
-            <button class="btn btn-warning btn-lg">Contact</button>
+    <div class="Education-timeline" id="EduTimeline">
+        <div class="container-fluid">
+            <h2 class="pb-3 pt-2 border-bottom mb-5 text-center">Education</h2>
+            <!--first section-->
+            <div class="row align-items-center how-it-works d-flex">
+                <div class="col-2 text-center bottom d-inline-flex justify-content-center align-items-center">
+                    <div class="circle font-weight-bold">1</div>
+                </div>
+                <div class="col-6">
+                    <h5>2014-2016</h5>
+                    <h6>School Leaving Certifiate</h6>
+                    <p>I've completed my secondary education from Oxford secondary school,Butwal</p>
+                </div>
+            </div>
+            <!--path between 1-2-->
+            <div class="row timeline">
+                <div class="col-2">
+                    <div class="corner top-right"></div>
+                </div>
+                <div class="col-8">
+                    <hr/>
+                </div>
+                <div class="col-2">
+                    <div class="corner left-bottom"></div>
+                </div>
+            </div>
+            <!--second section-->
+            <div class="row align-items-center justify-content-end how-it-works d-flex">
+                <div class="col-6 text-right">
+                    <h5>2018-2016</h5>
+                    <h6>Higher secondary(+2)</h6>
+                    <p>I've completed my Plus 2 or Higher secondary education from Oxford Academy, Butwal.</p>
+                </div>
+                <div class="col-2 text-center full d-inline-flex justify-content-center align-items-center">
+                    <div class="circle font-weight-bold">2</div>
+                </div>
+            </div>
+            <!--path between 2-3-->
+            <div class="row timeline">
+                <div class="col-2">
+                    <div class="corner right-bottom"></div>
+                </div>
+                <div class="col-8">
+                    <hr/>
+                </div>
+                <div class="col-2">
+                    <div class="corner top-left"></div>
+                </div>
+            </div>
+            <!--third section-->
+            <div class="row align-items-center how-it-works d-flex">
+                <div class="col-2 text-center top d-inline-flex justify-content-center align-items-center">
+                    <div class="circle font-weight-bold">3</div>
+                </div>
+                <div class="col-6">
+                    <h5>2018-2022</h5>
+                    <h6>Bahelor's Degree</h6>
+                    <p>I am currently Studying at GCES,Lamachaur. I am pursuing my career on Software engineering. </p>
+                </div>
+            </div>
         </div>
     </div>
-    <div class="footer">
-        <nav class="navbar navbar-expand-sm p-4">
-            <a class="navbar-brand text-info" href="#" style="font-family: 'Zhi Mang Xing', cursive; font-size: 40px;">Yogesh</a>
-            <ul class="nav ml-auto">
-                <div class="foot-one">
-                    <ul class="nav">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link " href="#">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Timeline</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Contact</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="foot-two">
-                    <ul class="nav">
-                        <li class="nav-item">
-                            <a href="https://www.facebook.com/yogesh.thapa.9406" class="nav-link" style="color: #3b5998;"><i class="fab fa-facebook"></i></a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="https://www.instagram.com/_yogeshmgr/" class="nav-link" style="color: #fe4164;"><i class="fab fa-instagram"></i></a>
-                        </li>
-                        <li class="nav-item">
-                            <p style="padding: 15px; color: white; font-size: 15px;">&copy;yogesh</p>
-                        </li>
-                    </ul>
-                </div>
-            </ul>
-        </nav>
-    </div>
+    <div class="container-fluid fifth-container">
+
+        <div class="container text-center text-white">
+            <div class="contact" id="contact">
+                <h2 class="py-4">Would you like to get in touch with Yogesh?</h2>
+                <p>Simply call or drop a message</p>
+                <button class="btn btn-warning btn-lg">Contact</button>
+            </div>
+        </div>
+        <div class="footer">
+            <nav class="navbar navbar-expand-sm p-4">
+                <a class="navbar-brand text-info" href="#" style="font-family: 'Zhi Mang Xing', cursive; font-size: 40px;">Yogesh</a>
+                <ul class="nav ml-auto">
+                    <div class="foot-one">
+                        <ul class="nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link " href="#">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#Accomplishment">Accomplishment</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#contact">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="foot-two">
+                        <ul class="nav">
+                            <li class="nav-item">
+                                <a href="https://www.facebook.com/yogesh.thapa.9406" target="_blank" class="nav-link" style="color: #3b5998;"><i class="fab fa-facebook"></i></a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="https://www.instagram.com/_yogeshmgr/" target="_blank" class="nav-link" style="color: #fe4164;"><i class="fab fa-instagram"></i></a>
+                            </li>
+                            <li class="nav-item">
+                                <p style="padding: 15px; color: white; font-size: 15px;">&copy;yogesh</p>
+                            </li>
+                        </ul>
+                    </div>
+                </ul>
+            </nav>
+        </div>
 </body>
 
 </html>

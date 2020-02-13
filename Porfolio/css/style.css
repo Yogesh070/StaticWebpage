@@ -32,7 +32,7 @@
 .main-image {
     height: 100vh;
     width: 40vw;
-    background: url(./received_192980501892955.jpeg) no-repeat scroll;
+    background: url(../Assets/frontme.jpeg) no-repeat scroll;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -122,7 +122,7 @@
 .third-container {
     font-family: 'Raleway', sans-serif;
     height: 100vh;
-    background: url(./sadasdasd.jpg) no-repeat center center scroll;
+    background: url(../Assets/coverme.jpg) no-repeat center center scroll;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -166,7 +166,7 @@
 }
 
 .v {
-    background: url(./received_192980501892955.jpeg) no-repeat center center scroll;
+    background: url(../Assets/underconstruction.png) no-repeat center center scroll;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -196,9 +196,109 @@
 }
 
 
-/* css for fourth-container */
+/* css for fouth container */
 
 .fourth-container {
+    height: 70vh;
+    background-color: white;
+}
+
+@media only screen and (max-width: 768px) {
+    .fourth-container {
+        height: 30vh;
+    }
+}
+
+
+/* css for fourth-container */
+
+.fifth-container {}
+
+
+/* csss for timeline */
+
+.circle {
+    padding: 13px 20px;
+    border-radius: 50%;
+    background-color: #D9BC70;
+    color: #fff;
+    max-height: 50px;
+    z-index: 2;
+}
+
+.how-it-works.row .col-2 {
+    align-self: stretch;
+}
+
+.how-it-works.row .col-2::after {
+    content: "";
+    position: absolute;
+    border-left: 3px solid #D9BC70;
+    z-index: 1;
+}
+
+.how-it-works.row .col-2.bottom::after {
+    height: 50%;
+    left: 50%;
+    top: 50%;
+}
+
+.how-it-works.row .col-2.full::after {
+    height: 100%;
+    left: calc(50% - 3px);
+}
+
+.how-it-works.row .col-2.top::after {
+    height: 50%;
+    left: 50%;
+    top: 0;
+}
+
+.timeline div {
+    padding: 0;
+    height: 40px;
+}
+
+.timeline hr {
+    border-top: 3px solid #D9BC70;
+    margin: 0;
+    top: 17px;
+    position: relative;
+}
+
+.timeline .col-2 {
+    display: flex;
+    overflow: hidden;
+}
+
+.timeline .corner {
+    border: 3px solid #D9BC70;
+    width: 100%;
+    position: relative;
+    border-radius: 15px;
+}
+
+.timeline .top-right {
+    left: 50%;
+    top: -50%;
+}
+
+.timeline .left-bottom {
+    left: -50%;
+    top: calc(50% - 3px);
+}
+
+.timeline .top-left {
+    left: -50%;
+    top: -50%;
+}
+
+.timeline .right-bottom {
+    left: 50%;
+    top: calc(50% - 3px);
+}
+
+.Education-timeline {
     height: 100vh;
     background-color: white;
 }
