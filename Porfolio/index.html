@@ -20,6 +20,10 @@
 </head>
 
 <body>
+    <div class="spinner">
+        <div class="cube1"></div>
+        <div class="cube2"></div>
+    </div>
     <div class="container-fluid a">
         <video autoplay muted loop id="myVideo">
             <source src="Assets/video (1).mp4" type="video/mp4">
@@ -216,6 +220,18 @@
                 </ul>
             </nav>
         </div>
+        <script>
+            $(document).ready(function() {
+                //Preloader
+                preloaderFadeOutTime = 500;
+
+                function hidePreloader() {
+                    var preloader = $('.spinner-wrapper');
+                    preloader.fadeOut(preloaderFadeOutTime);
+                }
+                hidePreloader();
+            });
+        </script>
 </body>
 
 </html>
