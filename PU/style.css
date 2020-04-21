@@ -87,14 +87,87 @@ p {
 
 #dark-light-btn {
     margin-left: 300px;
-    display: block;
 }
 
 
 /* ///////////////////////// */
 
-.about {
+#about {
     height: 100vh;
+}
+
+
+/* ///////////css for form////////////// */
+
+#contact {
+    background-color: white;
+    height: 100vh;
+}
+
+#contact h2 {
+    padding-top: 80px;
+    margin: 130px;
+    text-align: center;
+    color: #2B7A78;
+    font-size: 3em;
+    font-weight: 900;
+}
+
+.form-control {
+    border-radius: 3px;
+    border: 1px solid #73A1C2;
+}
+
+::placeholder,
+option {
+    color: #3AAFA9;
+    font-size: 15px;
+}
+
+.form-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.submit-button {
+    padding: 8px 105px;
+    margin: 30px;
+    background-color: #2B7A78;
+}
+
+.contact-data {
+    align-items: center;
+    text-align: center;
+}
+
+.contact-data h4 {
+    color: #2B7A78;
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.fa-facebook,
+.fa-twitter,
+.fa-github {
+    padding: 15px;
+    font-size: 20px;
+}
+
+.fa-twitter {
+    color: #86c7f4;
+}
+
+.fa-facebook {
+    color: #3b5998;
+}
+
+.fa-github {
+    color: #AD5C51;
+}
+
+.contact-data .email {
+    border-right: 2px solid #2B7A78;
 }
 
 
@@ -109,5 +182,12 @@ p {
     }
     #mac-img {
         display: none;
+    }
+    #contact h2 {
+        font-size: 2em;
+        margin: 20px 0 20px 0;
+    }
+    .contact-data .email {
+        border: 0;
     }
 }
