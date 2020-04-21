@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    /* background-color: #3AAFA9; */
+    font-family: 'Montserrat', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #3AAFA9;
+}
+
+
+/* /////////css for nav elements////////////// */
+
+#collapsibleNavbar .nav-item {
+    margin-top: 33px;
+    padding-left: 50px;
+    font-size: 16px;
+    font-weight: 900;
+}
+
+#collapsibleNavbar .nav-item a {
+    color: white;
+}
+
+.navbar button {
+    margin-top: 20px;
+    border-radius: 20px;
+}
+
+.navbar-toggler-icon {
+    color: #2B7A78;
+}
+
+.logo-ans {
+    border: 1px dashed white;
+}
+
+
+/* css for topsection content */
+
+#syllabus-btn {
+    color: white;
+    background-color: #2B7A78;
+}
+
+#solution-btn {
+    border: 1px solid #2B7A78;
+}
+
+#mac-img {
+    left: 200px;
+    float: right;
+    height: 100%;
+    width: 100%;
+}
+
+.title-content {
+    margin-top: 100px;
+}
+
+.title-content h2,
+p {
+    margin-bottom: 30px;
+}
+
+.topsection {
+    padding: 50px;
+}
+
+.pu {
+    word-wrap: break-word;
+    display: block;
+    color: white;
+    font-weight: 900;
+}
+
+
+/* ///darkmode//// */
+
+.dark-mode {
+    background-color: black;
+    color: white;
+}
+
+#dark-light-btn {
+    margin-left: 300px;
+    display: block;
+}
+
+
+/* ///////////////////////// */
+
+.about {
+    height: 100vh;
+}
+
+
+/* ///////////css for mobile devices////////////// */
+
+@media only screen and (max-width: 768px) {
+    #dark-light-btn {
+        margin: 0;
+    }
+    #solution-btn {
+        margin-top: 20px;
+    }
+    #mac-img {
+        display: none;
+    }
+}
