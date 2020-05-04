@@ -1,0 +1,305 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+    scroll-behavior: smooth;
+}
+
+.btn {
+    background-color: #4E5777;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Montserrat', sans-serif;
+    color: #4E5777;
+}
+
+
+/* ////////////////////css for navbar////////////////// */
+
+.nav-item {
+    padding: 10px;
+    font-size: large;
+}
+
+.nav-link {
+    color: black;
+}
+
+
+/* ////////////////////css for top section////////////////// */
+
+.top-section {
+    height: 100vh;
+    background: url(../Assets/photo-of-different-puppies-3299905.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    text-align: center;
+}
+
+.top-section div {
+    position: absolute;
+    top: 50%;
+}
+
+.top-section h1 {
+    color: #D1CFE2;
+    font-weight: 900;
+    font-size: 4em;
+    padding: 50px;
+}
+
+.top-section button {
+    background-color: #4E5777;
+    color: white;
+    border: none;
+}
+
+.top-section button:hover {
+    background-color: #D1CFE2;
+    color: #4E5777;
+}
+
+
+/* ////////////////////css for about section////////////////// */
+
+#dalmatian {
+    height: 100%;
+    width: 100%;
+}
+
+.about {
+    background-color: #f8f9fd;
+}
+
+.ac {
+    position: relative;
+}
+
+.about-text {
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    text-align: center;
+}
+
+.about-text .col-sm-6 {
+    padding: 15px;
+}
+
+.about-text h2 {
+    padding: 50px;
+    font-weight: 900;
+    font-size: 3em;
+}
+
+.details-bar {
+    padding: 40px;
+    background-color: #4E5777;
+    text-align: center;
+    color: white;
+}
+
+.details-bar h2 {
+    font-weight: 900;
+    font-size: 3em;
+    color: #f8f9fd;
+}
+
+.fa-hand-holding-medical,
+.fa-user-md,
+.fa-first-aid,
+.fa-hands-helping {
+    margin-bottom: 25px;
+    font-size: 50px;
+    color: #9CADCE;
+}
+
+
+/* ////////////////////css for faq////////////////// */
+
+.faq {
+    padding: 50px;
+}
+
+.faq-text {
+    padding: 50px 20px 50px 150px !important;
+}
+
+.faq-text h1 {
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
+.faq-text button {
+    margin: 10px;
+    border-radius: 40px;
+}
+
+.faq-text button {
+    background-color: #4E5777;
+    color: white;
+    border: none;
+}
+
+.faq-text button:hover {
+    background-color: #D1CFE2;
+    color: #4E5777;
+}
+
+.faq-btn {
+    text-align: left !important;
+    -webkit-box-shadow: 7px 6px 5px 1px rgba(224, 217, 224, 0.64);
+    -moz-box-shadow: 7px 6px 5px 1px rgba(224, 217, 224, 0.64);
+    box-shadow: 7px 6px 5px 1px rgba(224, 217, 224, 0.64);
+}
+
+.faq-img img {
+    width: auto;
+    max-width: 100%;
+}
+
+.faq-text p {
+    margin-bottom: 50px;
+    padding-left: 15px;
+}
+
+.card-body {
+    margin: 20px;
+    padding: 0 !important;
+}
+
+.card-body p {
+    padding: 15px;
+}
+
+.card-body ol {
+    padding: 20px;
+    margin: 10px;
+}
+
+
+/* ////////////////////css for footer////////////////// */
+
+#footer {
+    background-color: #f8f9fd;
+    padding: 50px;
+}
+
+.fa-instagram,
+.fa-facebook,
+.fa-twitter {
+    font-size: 20px;
+    margin-right: 15px;
+}
+
+.footer-links ul li {
+    list-style: none;
+    padding: 15px;
+}
+
+.footer-links ul li a {
+    color: black;
+    font-size: large;
+    text-decoration: none;
+}
+
+.footer-info {
+    padding-left: 20px;
+}
+
+.footer-question {
+    margin: 20px;
+}
+
+.fa-map,
+.fa-phone,
+.fa-telegram {
+    font-size: 20px;
+}
+
+.fa-twitter {
+    color: #86c7f4;
+}
+
+.fa-facebook {
+    color: #3b5998;
+}
+
+.fa-instagram {
+    color: #f2003c;
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+    .about-text {
+        position: static;
+        -ms-transform: none;
+        transform: none;
+    }
+    #dalmatian {
+        height: 100%;
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .top-section div {
+        position: static;
+    }
+    .top-section h1 {
+        color: #D1CFE2;
+        font-weight: 900;
+        font-size: 2.5em;
+        padding-top: 150px;
+    }
+    #dalmatian {
+        display: none;
+    }
+    .about-text {
+        position: static;
+        -ms-transform: none;
+        transform: none;
+    }
+    .about-text h2 {
+        font-weight: 900;
+        font-size: 2em;
+    }
+    .about-text h3 {
+        font-size: 20px;
+    }
+    .details-bar {
+        padding: 30px;
+    }
+    .details-bar h2 {
+        font-weight: 400;
+        font-size: 2em;
+    }
+    .fa-hand-holding-medical,
+    .fa-user-md,
+    .fa-first-aid,
+    .fa-hands-helping {
+        margin-bottom: 15px;
+        font-size: 30px;
+    }
+    .faq-text {
+        padding: 10px !important;
+    }
+    .faq-text button {
+        margin: 10px 0px;
+        border-radius: 40px;
+    }
+    .footer-question {
+        margin: 20px 0;
+    }
+    #footer h2 {
+        font-size: 20px;
+        margin-top: 10px;
+    }
+}

@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/acd5627491.js"></script>
+    <script src="../JS/faq-btn.js"></script>
+</head>
+
+<body>
+    <section>
+        <nav class="navbar navbar-expand-md ">
+            <a class="navbar-brand" href="#">Pet<span class="logo-care">Care</span></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav m-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#more">Veterinarian</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#more">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#more">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </section>
+    <section class="top-section">
+        <div class="container-fluid">
+            <h1>Highest Quality Care for Pets <br> You'll Love</h1>
+            <button class="btn btn-outline-secondary btn-lg">Learn More</button>
+        </div>
+    </section>
+    <section class="about p-5" id="about">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-4 dalmatian">
+                    <img src="../Assets/dalmatian-sitting-white-surface-933498.png" alt="dalmatian" id="dalmatian">
+                </div>
+                <div class="col-sm-8 ac">
+                    <div class="about-text">
+                        <h2>Why Choose Us?</h2>
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <i class="fas fa-hand-holding-medical"></i>
+                                <h3>Care Advices</h3>
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et velit consequuntur quae beatae aperiam itaque.</p>
+                            </div>
+                            <div class="col-sm-6">
+                                <i class="fas fa-user-md"></i>
+                                <h3>Customer Support</h3>
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et velit consequuntur quae beatae aperiam itaque.</p>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="about-icon"><i class="fas fa-first-aid"></i></div>
+                                <h3>Emergenc Services</h3>
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et velit consequuntur quae beatae aperiam itaque.</p>
+                            </div>
+                            <div class="col-sm-6">
+                                <i class="fas fa-hands-helping"></i>
+                                <h3>Vetneraian help</h3>
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et velit consequuntur quae beatae aperiam itaque.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="container-fluid details-bar">
+        <div class="row">
+            <div class="col-sm-3">
+                <h2>50</h2>
+                <p>Pets</p>
+            </div>
+            <div class="col-sm-3">
+                <h2>5,111</h2>
+                <p>Professionals</p>
+            </div>
+            <div class="col-sm-3">
+                <h2>55</h2>
+                <p>Products</p>
+            </div>
+            <div class="col-sm-3">
+                <h2>54</h2>
+                <p>Pets Hosted</p>
+            </div>
+        </div>
+    </div>
+    <section>
+        <div class="container-fluid faq">
+            <div class="row ">
+                <div class="col-sm-6 faq-text">
+                    <h1>
+                        Frequently Asks Questions
+                    </h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam quam sit repudiandae possimus, dolore recusandae!</p>
+                    <div>
+                        <button class="btn btn-block faq-btn" type="button" data-toggle="collapse" data-target="#TrainDog" aria-expanded="false" aria-controls="collapseExample" onclick="changesign()">
+                              How To Train Your Dog?<span style="float: right;"><i id="plus" class="fas fa-plus fa-minus"></i></span>
+                            </button>
+                        <div class="collapse" id="TrainDog">
+                            <div class="card card-body">
+                                <ol>
+                                    <li>Lorem, ipsum.</li>
+                                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                                    <li>Lorem ipsum dolor sit amet.</li>
+                                    <li>Lorem ipsum dolor sit.</li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <button class="btn faq-btn btn-block" type="button" data-toggle="collapse" data-target="#manage" aria-expanded="false" aria-controls="collapseExample" onclick="changesign1()">
+                              How To Manage Your Pet?<span style="float: right;"><i id="plus1" class="fas fa-plus"></i></span>
+                            </button>
+                        <div class="collapse" id="manage">
+                            <div class="card card-body">
+                                <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <button class="btn faq-btn btn-block " type="button" data-toggle="collapse" data-target="#requirements" aria-expanded="false" aria-controls="collapseExample" onclick="changesign2()">
+                              Requirements for Best Sitting<span style="float: right;"><i id="plus2" class="fas fa-plus"></i></span>
+                            </button>
+                        <div class="collapse" id="requirements">
+                            <div class="card card-body">
+                                <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 faq-img"><img src="../Assets/undraw_questions_75e0.png" alt="faq-img"></div>
+            </div>
+        </div>
+    </section>
+    <section id="footer">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-3">
+                    <h2>Pet sitting</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis, voluptatem.</p>
+                    <i class="fa fa-instagram" aria-hidden="true"></i>
+                    <i class="fa fa-facebook" aria-hidden="true"></i>
+                    <i class="fa fa-twitter" aria-hidden="true"></i>
+                </div>
+                <div class="col-sm-3">
+                    <h2>Latest News</h2>
+                </div>
+                <div class="col-sm-3 footer-links">
+                    <h2>Quick Links</h2>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#Services">Services</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-3">
+                    <h2>Have a Question?</h2>
+                    <div class="footer-question"><i class="fa fa-map" aria-hidden="true"></i> <span class="footer-info"> 203 Fake St. Mountain View, San Francisco, California, USA</span></div>
+                    <div class="footer-question"><i class="fa fa-phone" aria-hidden="true"></i><span class="footer-info">+977-6546448</span></div>
+                    <div class="footer-question"><i class="fa fa-telegram" aria-hidden="true"></i><span class="footer-info">info@gmail.com</span></div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
