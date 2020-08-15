@@ -1,0 +1,328 @@
+$theme-color:#0073aa;
+$text-color:#82878C;
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.navbar-brand {
+    img {
+        height: 75px;
+        width: 250px;
+        cursor: pointer;
+        // invert the logo color because the background-color is dark
+        -webkit-filter: invert(1);
+        filter: invert(1);
+    }
+}
+
+.navbar-toggler-icon i {
+    color: $text-color;
+    font-size: 1.5em;
+}
+
+.navbar {
+    padding: 0 !important;
+    input {
+        background-color: #191e23;
+        color: #b4b9be;
+        outline: none;
+        border: none;
+        font-size: 12px;
+        padding: 5px 30px;
+    }
+}
+
+.top-section {
+    background-color: #23282d;
+    color: white;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #eee;
+    font-size: 13px;
+    font-weight: 800;
+    &:hover {
+        color: $theme-color;
+    }
+}
+
+.getStartedBtn {
+    background-color: $theme-color;
+    border-radius: 2px;
+    a {
+        text-decoration: none;
+        color: #eee;
+        font-size: 13px;
+    }
+}
+
+@mixin center-content {
+    text-align: center;
+    div {
+        margin: auto;
+    }
+    p {
+        max-width: 700px;
+        margin: auto;
+        padding: 11px 11px 30px;
+        font-size: 1.35rem;
+        font-weight: 300;
+    }
+}
+
+.meet-wordpress {
+    background-color: $theme-color;
+    color: white;
+    padding: 28px;
+    line-height: 1.5;
+    @include center-content;
+    h1 {
+        font-size: 3.8147rem;
+        font-weight: 300;
+        margin: 36px 0 18px;
+    }
+}
+
+.screen-themes {
+    padding: 30px 0;
+    @include center-content;
+    color: $text-color;
+    img {
+        height: 400px;
+        // width: 850px;
+    }
+    h2 {
+        color: black;
+        font-size: 2.5rem;
+        font-weight: 300;
+        margin: 36px 0 18px;
+    }
+}
+
+.collage {
+    padding: 0;
+    height: 100vh;
+    background: url(./src/collage.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.features {
+    text-align: center;
+    .features-icon-panel {
+        margin: 0 80px 40px;
+        padding: 50px;
+        .features-icon {
+            display: flex;
+            flex-direction: column;
+            border-right: 1px solid #eee;
+            padding: 20px;
+            i {
+                padding-bottom: 20px;
+                font-size: 40px;
+                color: #00A0D2;
+            }
+        }
+        a {
+            color: $theme-color;
+            padding: 15px 11px 50px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        h2 {
+            border-top: 2px solid #eee;
+            font-size: 2.5rem;
+            font-weight: 300;
+            margin: 56px 0 18px;
+            padding: 60px 0 0;
+        }
+        p {
+            color: $text-color;
+            font-size: 1.25rem;
+            font-weight: 300;
+        }
+        .first-row {
+            border-bottom: 1px solid #eee;
+        }
+        .last-icon {
+            border: none;
+        }
+        .features-bottom-text {
+            padding-top: 40px;
+            font-size: 18px;
+            line-height: 1.5;
+            font-weight: 600;
+            color: #32373c;
+            a {
+                color: $theme-color;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+.community {
+    color: white;
+    height: 80vh;
+    background: url(./src//group.jpg) no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    .container {
+        line-height: 1.5;
+        // padding: 120px 0 20px;
+        h2 {
+            font-size: 2.5em;
+            font-weight: 800;
+            padding-top: 80px;
+        }
+        p {
+            font-size: 1.25em;
+            padding: 20px 0;
+        }
+        button {
+            background-color: white;
+            border-radius: 2px;
+        }
+    }
+}
+
+.getStarted {
+    @include center-content;
+    border-bottom: 1px solid #eee;
+    .container {
+        margin: 0 auto;
+        padding: 50px;
+    }
+    h2 {
+        color: black;
+        font-size: 2.5rem;
+        font-weight: 300;
+        margin: 36px 0 18px;
+    }
+    p {
+        color: $text-color;
+    }
+    button {
+        background-color: $theme-color;
+        font-size: 18px;
+        padding: 10px 40px
+    }
+    a {
+        text-decoration: none;
+        color: white;
+    }
+}
+
+.bottom-section {
+    max-width: 900px;
+    margin: 50px auto;
+    h3 {
+        font-size: 14px;
+        color: $theme-color;
+        font-weight: 800;
+    }
+    img {
+        width: 120px;
+    }
+    p {
+        font-size: 13px;
+    }
+}
+
+.footer {
+    overflow: auto;
+    margin: 0 auto;
+    padding: 22px 14px 65px 14px;
+    border-top: 1px solid #dfdfdf;
+    background-color: #f7f7f7;
+    a {
+        display: block;
+        text-decoration: none;
+        color: $theme-color;
+    }
+    h2 {
+        color: rgba(184, 181, 181, 0.933);
+        text-align: center;
+        font-size: bold;
+    }
+    i {
+        color: $text-color;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    .meet-wordpress {
+        h1 {
+            font-size: 2.5rem;
+        }
+    }
+    .screen-themes {
+        // padding: 30px 0;
+        // @include center-content;
+        // color: $text-color;
+        img {
+            height: 400px;
+            width: 850px;
+            overflow: hidden;
+        }
+        p {
+            font-size: 1.2rem;
+            font-weight: 300;
+        }
+    }
+    .collage {
+        height: 50vh;
+        background: url(./src/collage.jpg) no-repeat center center scroll;
+    }
+    .features {
+        text-align: center;
+        .features-icon-panel {
+            padding: 0;
+            margin: 0;
+            .features-icon {
+                i {
+                    font-size: 30px;
+                }
+            }
+            a {
+                padding: 0;
+            }
+        }
+        .features-bottom-text {
+            font-size: 15px;
+            font-weight: 400;
+            color: #32373c;
+        }
+    }
+    .getStarted {
+        .container {
+            margin: 0;
+            padding: 50px;
+        }
+        h2 {
+            font-size: 2.3rem;
+            margin: 0;
+        }
+    }
+    .bottom-section {
+        .col-sm-2 {
+            padding: 25px;
+        }
+    }
+}
